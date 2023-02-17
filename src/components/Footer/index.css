@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links, .footer-links a{
+    color: lightgray;
+}
+
+.footer-links a{
+    text-decoration: none;
+}

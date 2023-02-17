@@ -1,0 +1,41 @@
+.add-modal{
+    height: 240px;
+    width: 260px;
+    background-color: lightgray;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    top: 5.8em;
+    left: 61em;
+}
+
+.add-modal input{
+    height: 120px;
+    width: 236px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    text-align: start;
+}
+
+.add-modal button{
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: #081e34;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 15px 0px ;
+}
+
+.add-modal p{
+    font-weight: 500;
+}

@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header"
+import Main from './components/Main';
+import Footer from "./components/Footer"
+import { v4 as uuid } from "uuid";
+
+const itemsData = [
+  {
+      id: uuid(),
+      title: "task 1",
+      isDone: false,
+      isTrashModalShown: false,
+      inTrash: false
+  },
+  {
+      id: uuid(),
+      title: "task 2",
+      isDone: false,
+      isTrashModalShown: false,
+      inTrash: false
+  },
+  {
+      id: uuid(),
+      title: "task 3",
+      isDone: false,
+      isTrashModalShown: false,
+      inTrash: false
+  },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div>
+        <Header />
+        <Main itemsData = {itemsData} />
+      </div>
+      <Footer />
     </div>
+
   );
 }
 
